@@ -67,25 +67,25 @@ export default function Home() {
           <div className="mt-5">
             <h1
               ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-7xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
             >
               {data.headerTaglineOne}
             </h1>
             <h1
               ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-7xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineTwo}
             </h1>
             <h1
               ref={textThree}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-7xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineThree}
             </h1>
             <h1
               ref={textFour}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-7xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineFour}
             </h1>
@@ -94,7 +94,7 @@ export default function Home() {
           <Socials className="mt-2 laptop:mt-5" />
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+          <h1 className="text-3xl text-bold">Projects</h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project) => (
@@ -103,24 +103,27 @@ export default function Home() {
                 img={project.imageSrc}
                 name={project.title}
                 description={project.description}
-                onClick={() => window.open(project.url)}
+                onClick={() => window.open(project.url,"_self")}
               />
             ))}
           </div>
         </div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
-          <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
-            {data.services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                name={service.title}
-                description={service.description}
-              />
-            ))}
+        {/* 
+          <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
+            <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
+            <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
+              {data.services.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  name={service.title}
+                  description={service.description}
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        */}
+
         {/* This button should not go into production */}
         {process.env.NODE_ENV === "development" && (
           <div className="fixed bottom-5 right-5">
@@ -129,12 +132,37 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
-          </p>
+
+        {/* OLD ABOUT SECTION
+          <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
+            <h1 className="tablet:m-10 text-3xl text-bold">About</h1>
+            <p className="tablet:m-10 mt-2 text-l laptop:text-2xl w-full laptop:w-3/5">
+              {data.aboutpara}
+            </p>
+          </div>
+        */}
+
+        <h1 className="text-3xl mt-20">About</h1>
+        <div className="mt-2 laptop:mt-10 p-2 laptop:p-0 flex flex-col laptop:flex-row items-center laptop:items-start" ref={aboutRef}>
+        
+          {/* Image Section */}
+          <div className=" laptop:mt-0 laptop:ml-4 laptop:mr-4 w-full laptop:w-auto">
+            <img
+              src="/images/headshotNew.jpg"
+              alt="Varshni Karthikeyan"
+              className="w-48 h-48 laptop:w-64 laptop:h-64 rounded-lg shadow-lg object-cover"
+            />
+          </div>
+
+          {/* Text Section */}
+          <div className="mt-10 flex-1 tablet:m-10 text-l laptop:text-2xl laptop:mr-22 w-full laptop:w-3/5">
+            
+            <p>{data.aboutpara}</p>
+          </div>
+          
         </div>
+
+        
         <Footer />
       </div>
     </div>

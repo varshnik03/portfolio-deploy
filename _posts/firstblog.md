@@ -1,15 +1,21 @@
 ---
 date: '2022-07-15T11:50:54.000Z'
-title: Amazing Blog
-tagline: This is a Tagline If you want to add.
+title: Better Bites
+tagline: An app to help college students with their food habits.
 preview: >-
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book.
+  UI/UX Design · Mobile Design
 image: >-
-  https://images.unsplash.com/photo-1656188505561-19f1a1b6cda8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80
+  https://images.unsplash.com/photo-1656427868828-79a829b92b2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80
 ---
+
+> **Role** somehting heree
+>
+> **Team** somehting else here
+
+#### Understanding The Problem
+# **The Issue At Hand**
+College students have a lot on their plate and often don’t have time to prioritize their meals. They have limitations and restrictions what they can afford, available cooking supplies and time. Because of this, they end up eating **quick-meals that are usually unhealthy**.
+this is a new line
 
 # Heading One
 

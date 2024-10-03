@@ -45,12 +45,12 @@ const Resume = () => {
                 mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
               } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
             >
-              <h1 className="text-3xl font-bold">Varshni Karthikeyan</h1>
+              <div class="flex flex-col tablet:flex-row justify-between items-start tablet:items-center space-y-4 tablet:space-y-0 tablet:space-x-4">
+                <h1 className="text-3xl font-bold">Varshni Karthikeyan</h1>
+                <Button type={"primary"} onClick={() => window.open('https://drive.google.com/file/d/1mdkvTszz5xAWLMQN3xmIAEH6lZboLCuI/view?usp=sharing', '_blank')}> Click for PDF </Button>
+              </div>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>
-              <h2 className="w-4/5 text-l mt-5 opacity-50">
-                {/* resume.description */} <a href="https://drive.google.com/file/d/1mdkvTszz5xAWLMQN3xmIAEH6lZboLCuI/view?usp=sharing" target="_blank">Click here to see my resume as a pdf!</a>
-              </h2>
-              <div className="mt-2">
+              <div className="mt-5">
                 <Socials />
               </div>
               <div className="mt-5">

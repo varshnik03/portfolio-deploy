@@ -19,15 +19,16 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
 
   return (
     <>
+      {/* MOBILE */}
       <Popover className="block tablet:hidden mt-5">
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
               <h1
                 onClick={() => router.push("/")}
-                className="font-medium p-2 laptop:p-0 link"
+                className="font-medium text-xl tablet:text-2xl p-2 laptop:p-0 link"
               >
-                {name}.
+                {name}
               </h1>
 
               <div className="flex items-center">
@@ -72,31 +73,37 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {/* <Button onClick={handleWorkScroll}>Work</Button> */}
                   <Button onClick={handleAboutScroll}>About</Button>
                   {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Projects</Button>
+                    <Button onClick={() => router.push("/blog")}>Work</Button>
                   )}
+                  {showBlog && (
+                    <Button onClick={() => router.push("/visuals")}>Visuals</Button>
+                  )}
+                  
                   {showResume && (
                     <Button
-                      onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
-                      }
+                      onClick={() => router.push("/resume")}
+                      classes="first:ml-1"
                     >
                       Resume
                     </Button>
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:varshnik@gmail.com")}
                   >
-                    Contact
+                    Contact 
                   </Button>
-                </div>
+                </div> 
               ) : (
-                <div className="grid grid-cols-1">
-                  <Button onClick={() => router.push("/")} classes="first:ml-1">
+                <div className="grid grid-cols-1" > {/* MOBILE INSIDE WORK */}
+                  {/* <Button onClick={() => router.push("/")} classes="first:ml-1">
                     Home
-                  </Button>
+                  </Button> */}
                   {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Projects</Button>
+                    <Button onClick={() => router.push("/blog")}>Work</Button>
+                  )}
+                  {showBlog && (
+                    <Button onClick={() => router.push("/visuals")}>Visuals</Button>
                   )}
                   {showResume && (
                     <Button
@@ -118,6 +125,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           </>
         )}
       </Popover>
+
+      {/* HOME DESKTOP */}
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
           theme === "light" && "bg-white"
@@ -125,16 +134,19 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
       >
         <h1
           onClick={() => router.push("/")}
-          className="font-medium cursor-pointer mob:p-2 laptop:p-0"
+          className="font-medium tablet:text-xl laptop:text-2xl cursor-pointer mob:p-2 laptop:p-0"
         >
-          {name}.
+          {name}
         </h1>
         {!isBlog ? (
           <div className="flex">
             {/* <Button onClick={handleWorkScroll}>Work</Button> */}
             <Button onClick={handleAboutScroll}>About</Button>
             {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Projects</Button>
+              <Button onClick={() => router.push("/blog")}>Work</Button>
+            )}
+            {showBlog && (
+              <Button onClick={() => router.push("/visuals")}>Visuals</Button>
             )}
             {showResume && (
               <Button
@@ -157,13 +169,16 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 ></img>
               </Button>
-            )}
-          </div>
+            )} {/* DESKTOP INSIDE WORK */}
+          </div> 
         ) : (
           <div className="flex">
-            <Button onClick={() => router.push("/")}>Home</Button>
+            {/* <Button onClick={() => router.push("/")}>Home</Button> */}
             {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Projects</Button>
+              <Button onClick={() => router.push("/blog")}>Work</Button>
+            )}
+            {showBlog && (
+              <Button onClick={() => router.push("/visuals")}>Visuals</Button>
             )}
             {showResume && (
               <Button

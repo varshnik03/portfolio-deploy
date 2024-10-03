@@ -15,7 +15,13 @@ image: >-
 #### Understanding The Problem
 # **The Issue At Hand**
 College students have a lot on their plate and often don’t have time to prioritize their meals. They have limitations and restrictions what they can afford, available cooking supplies and time. Because of this, they end up eating **quick-meals that are usually unhealthy**.
+
 this is a new line
+
+this is a second new line
+
+![An old rock in the desert](/images/takeawaysAndEmpathy.svg)
+
 
 # Heading One
 

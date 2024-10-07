@@ -24,7 +24,7 @@ const BetterBites = () => {
           <div className="mt-10 ml-4 mr-4 laptop:ml-28 laptop:mr-28">
             <img className="w-full h-full rounded-lg mb-6 laptop:mb-12 object-cover" src="/images/betterbites/topBanner.svg" alt="header"></img>
             <h1 className="mx-auto mob:p-2 font-semibold text-5xl mb-6 laptop:text-6xl laptop:mt-15, mb-12" >Better Bites</h1>
-            <img className="w-full h-auto mb-14 rounded-lg shadow-lg object-cover" src="/images/betterbites/betterbites_info.svg" alt="header"></img>
+            <img className="w-full h-auto mb-14 laptop:mb-20 rounded-lg shadow-lg object-cover" src="/images/betterbites/betterbites_info.svg" alt="info"></img>
             
             <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Understanding The Problem</h3>
             <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">The Issue At Hand</h1>
@@ -51,7 +51,7 @@ const BetterBites = () => {
             <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Low-Fidelity Wireframes</h3>
             <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Next Up - Designing</h1>
             <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">We went through a Crazy 8’s exercise to iterate through various designs for our 5 main screens. Then, we took pieces from the iterations to create the low-fidelity wireframe for each screen.</p>
-            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/betterbites/crazy8.svg" alt="crazy 8's exercise"></img>
+            <img className="w-full h-auto mb-4 laptop:mb-12 rounded-lg object-cover" src="/images/betterbites/crazy8.svg" alt="crazy 8's exercise"></img>
             <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/betterbites/lowFiScreens.svg" alt="low-fi wireframes"></img>
 
             <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">High-Fidelity Prototypes</h3>

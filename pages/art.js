@@ -30,7 +30,7 @@ const Art = () => {
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded" src="/images/art/watercolorGirl.JPG" alt=""/>
-                        <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg">Title, 2021 · <i>Watercolor</i></p>
+                        <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg">Colors of Bliss, 2021 · <i>Watercolor</i></p>
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded" src="/images/art/vasePiece.jpg" alt=""/>
@@ -42,7 +42,7 @@ const Art = () => {
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded" src="/images/art/blueportrait.JPG" alt=""/>
-                        <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg">Title, 2021 · <i>Acrylic</i></p>
+                        <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg">Caught In The Lights, 2021 · <i>Acrylic</i></p>
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded" src="/images/art/digital.JPG" alt=""/>

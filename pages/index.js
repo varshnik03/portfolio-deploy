@@ -157,7 +157,8 @@ export default function Home() {
           {/* Text Section */}
           <div className="mt-10 flex-1 tablet:m-10 text-l laptop:text-2xl laptop:mr-22 w-full laptop:w-3/5">
             
-            <p>{data.aboutpara}</p>
+            {/*<p>{data.aboutpara}</p>*/}
+            <p>👋🏽 My name is Varshni Karthikeyan and I am a senior at the University of Texas at Dallas studying Software Engineering + pursuing a certificate in Applied Experience Design and Research. Additionally, I am the secretary for the <u><a href="https://uxutd.com/">User Experience Club at UTD</a></u>. Growing up, I had a passion for art and wanted to find a way to merge my creative side with a technical field. That's when I discovered user experience design, which offers a combination of both plus so much more!</p>
           </div>
           
         </div>

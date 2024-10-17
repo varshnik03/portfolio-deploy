@@ -10,7 +10,7 @@ const ProjectResume = ({ dates, type, position, bullets }) => {
         <h2>{dates}</h2>
         <h3 className="text-sm opacity-50">{type}</h3>
       </div>
-      <div className="ml-6 mt-2 laptop: mt-8 ml-0 w-4/5">
+      <div className="ml-7 mt-2 laptop: mt-8 ml-0 w-4/5">
         {/*<h2 className="text-lg font-bold">{position}</h2>*/}
         {bulletsLocal && bulletsLocal.length > 0 && (
           <ul className="list-disc">

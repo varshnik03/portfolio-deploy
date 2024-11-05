@@ -21,7 +21,7 @@ const DietAI = () => {
     <>
         <div className="container mx-auto mb-10">
           <Header isBlog={true}></Header>
-          <div className="mt-10 ml-4 mr-4 laptop:ml-28 laptop:mr-28">
+          <div className="mt-10 ml-4 mr-4 laptop:ml-40 laptop:mr-40">
             <img className="w-full h-full rounded-lg mb-6 laptop:mb-12 object-cover" src="/images/dietai/topBanner.svg" alt="header"></img>
             <h1 className="mx-auto mob:p-2 font-semibold text-5xl mb-6 laptop:text-6xl laptop:mt-15, mb-12" >DietAI</h1>
             <img className="w-full h-auto mb-14 rounded-lg shadow-lg object-cover" src="/images/dietai/dietai_info.svg" alt="info"></img>

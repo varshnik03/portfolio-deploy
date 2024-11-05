@@ -58,110 +58,113 @@ export default function Home() {
       <div className="gradient-circle"></div>
       <div className="gradient-circle-bottom"></div>
 
-      <div className="container mx-auto mb-10">
+      <div className="container mx-auto mb-10 ">
         <Header
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10">
-          <div className="mt-5">
-            <h1
-              ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
-            >
-              {data.headerTaglineOne}
-            </h1>
-            <h1
-              ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineTwo}
-            </h1>
-            <h1
-              ref={textThree}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineThree}
-            </h1>
-            <h1
-              ref={textFour}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineFour}
-            </h1>
+        <div className="laptop:pl-16 laptop:pr-16">{/* Home page content is within this div */}
+          <div className="laptop:mt-20 mt-10">
+            <div className="mt-5">
+              <h1
+                ref={textOne}
+                className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+              >
+                {data.headerTaglineOne}
+              </h1>
+              <h1
+                ref={textTwo}
+                className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              >
+                {data.headerTaglineTwo}
+              </h1>
+              <h1
+                ref={textThree}
+                className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              >
+                {data.headerTaglineThree}
+              </h1>
+              <h1
+                ref={textFour}
+                className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              >
+                {data.headerTaglineFour}
+              </h1>
+            </div>
+
+            <Socials className="mt-2 laptop:mt-5" />
           </div>
+          <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
+            <h1 className="text-3xl text-bold">Work</h1>
 
-          <Socials className="mt-2 laptop:mt-5" />
-        </div>
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-3xl text-bold">Work</h1>
-
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {data.projects.map((project) => (
-              <WorkCard
-                key={project.id}
-                img={project.imageSrc}
-                name={project.title}
-                description={project.description}
-                onClick={() => window.open(project.url,"_self")}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* 
-          <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-            <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
-            <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
-              {data.services.map((service, index) => (
-                <ServiceCard
-                  key={index}
-                  name={service.title}
-                  description={service.description}
+            <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+              {data.projects.map((project) => (
+                <WorkCard
+                  key={project.id}
+                  img={project.imageSrc}
+                  name={project.title}
+                  description={project.description}
+                  onClick={() => window.open(project.url,"_self")}
                 />
               ))}
             </div>
           </div>
-        */}
 
-        {/* This button should not go into production */}
-        {process.env.NODE_ENV === "development" && (
-          <div className="fixed bottom-5 right-5">
-            <Link href="/edit">
-              <Button type="primary">Edit Data</Button>
-            </Link>
-          </div>
-        )}
+          {/* 
+            <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
+              <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
+              <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
+                {data.services.map((service, index) => (
+                  <ServiceCard
+                    key={index}
+                    name={service.title}
+                    description={service.description}
+                  />
+                ))}
+              </div>
+            </div>
+          */}
 
-        {/* OLD ABOUT SECTION
-          <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-            <h1 className="tablet:m-10 text-3xl text-bold">About</h1>
-            <p className="tablet:m-10 mt-2 text-l laptop:text-2xl w-full laptop:w-3/5">
-              {data.aboutpara}
-            </p>
-          </div>
-        */}
+          {/* This button should not go into production */}
+          {process.env.NODE_ENV === "development" && (
+            <div className="fixed bottom-5 right-5">
+              <Link href="/edit">
+                <Button type="primary">Edit Data</Button>
+              </Link>
+            </div>
+          )}
 
-        <h1 className="text-3xl mt-20">About</h1>
-        <div className="mt-2 laptop:mt-10 p-2 laptop:p-0 flex flex-col laptop:flex-row items-center laptop:items-start" ref={aboutRef}>
-        
-          {/* Image Section */}
-          <div className=" laptop:mt-0 laptop:ml-4 laptop:mr-4 w-full laptop:w-auto">
-            <img
-              src="/images/headshotNew.jpg"
-              alt="Varshni Karthikeyan"
-              className="w-48 h-48 laptop:w-64 laptop:h-64 rounded-lg shadow-lg object-cover"
-            />
-          </div>
+          {/* OLD ABOUT SECTION
+            <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
+              <h1 className="tablet:m-10 text-3xl text-bold">About</h1>
+              <p className="tablet:m-10 mt-2 text-l laptop:text-2xl w-full laptop:w-3/5">
+                {data.aboutpara}
+              </p>
+            </div>
+          */}
 
-          {/* Text Section */}
-          <div className="mt-10 flex-1 tablet:m-10 text-l laptop:text-2xl laptop:mr-22 w-full laptop:w-3/5">
-            
-            {/*<p>{data.aboutpara}</p>*/}
-            <p>👋🏽 My name is Varshni Karthikeyan and I am a senior at the University of Texas at Dallas studying Software Engineering + pursuing a certificate in Applied Experience Design and Research. Additionally, I am the secretary for the <u><a href="https://uxutd.com/">User Experience Club at UTD</a></u>. Growing up, I had a passion for art and wanted to find a way to merge my creative side with a technical field. That's when I discovered user experience design, which offers a combination of both plus so much more!</p>
-          </div>
+          <h1 className="text-3xl mt-20">About</h1>
+          <div className="mt-2 laptop:mt-10 p-2 laptop:p-0 flex flex-col laptop:flex-row items-center laptop:items-start" ref={aboutRef}>
           
+            {/* Image Section */}
+            <div className=" laptop:mt-0 laptop:ml-4 laptop:mr-4 w-full laptop:w-auto">
+              <img
+                src="/images/headshotNew.jpg"
+                alt="Varshni Karthikeyan"
+                className="w-48 h-48 laptop:w-64 laptop:h-64 rounded-lg shadow-lg object-cover"
+              />
+            </div>
+
+            {/* Text Section */}
+            <div className="mt-10 flex-1 tablet:m-10 text-l laptop:text-2xl laptop:mr-22 w-full laptop:w-3/5">
+              
+              {/*<p>{data.aboutpara}</p>*/}
+              <p>👋🏽 My name is Varshni Karthikeyan and I am a senior at the University of Texas at Dallas studying Software Engineering + pursuing a certificate in Applied Experience Design and Research. Additionally, I am the secretary for the <u><a href="https://uxutd.com/">User Experience Club at UTD</a></u>. Growing up, I had a passion for art and wanted to find a way to merge my creative side with a technical field. That's when I discovered user experience design, which offers a combination of both plus so much more!</p>
+            </div>
+            
+          </div>
         </div>
+        
 
         
         <Footer />

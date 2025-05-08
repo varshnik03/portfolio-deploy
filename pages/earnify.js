@@ -75,7 +75,10 @@ const Earnify = () => {
             <p className="mb-4 laptop:mb-4 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Gas price lock</b> - Once a user locks the price on a specific location, it is indicated in red. This allows the user to “lock in” the current price of gas to be used on a future purchase (it will only be valid for a certain amount of time).</p>
             <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Favorite locations</b> - By saving certain locations as favorite, the user can easily view it on the fuel page.</p>
             <img className="w-full h-auto mb-4 laptop:mb-4 rounded-lg object-cover" src="/images/earnify/feature_screens_4.svg" alt="feature 4"></img>
-            <p className="mb-4 laptop:mb-4 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Order & pickup</b> - This page allows the user to order items from a specific store. They can choose any item from the order page or order your favorite combos that are saved into the app.</p>
+            <p className="mb-4 laptop:mb-4 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Order</b> - This page allows the user to view items that are available to order at a specific along with their nutritional info.</p>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Pickup</b> - This page allows the user to order items from a specific store. They can choose any item from the order page or order your favorite combos that are saved into the app.</p>
+            <img className="w-full h-auto mb-4 laptop:mb-4 rounded-lg object-cover" src="/images/earnify/feature_screens_5.svg" alt="feature 5"></img>
+            <p className="mb-4 laptop:mb-4 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Home</b> - This page is similar to earnify’s current design while incorporating Benzie to remind the user about Benzie challenges and rewards. There is also a streak feature to keep the user engaged.</p>
             <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Notifications</b> - Timely notifications remind the user of deals & rewards to redeem.</p>
 
             <h2 className="mb-2 laptop:mb-14 text-2xl laptop:text-3xl"><i>Final prototype link coming soon!</i></h2>

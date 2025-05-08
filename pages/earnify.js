@@ -1,0 +1,93 @@
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import Cursor from "../components/Cursor";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import ProjectResume from "../components/ProjectResume";
+import Socials from "../components/Socials";
+import Button from "../components/Button";
+import { useTheme } from "next-themes";
+// Data
+//import { name, showResume } from "../data/portfolio.json";
+import { resume } from "../data/portfolio.json";
+import data from "../data/portfolio.json";
+
+const Earnify = () => {
+  const router = useRouter();
+  const theme = useTheme();
+  const [mount, setMount] = useState(false);
+
+  return (
+    <>
+        <div className="container mx-auto mb-10">
+          <Header isBlog={true}></Header>
+          <div className="mt-10 ml-4 mr-4 laptop:ml-40 laptop:mr-40">
+            <img className="w-full h-full rounded-lg mb-6 laptop:mb-12 object-cover" src="/images/earnify/topBanner.svg" alt="header"></img>
+            <h1 className="mx-auto mob:p-2 font-semibold text-5xl mb-6 laptop:text-6xl laptop:mt-15, mb-12" >earnify</h1>
+            <img className="w-full h-auto mb-14 laptop:mb-20 rounded-lg shadow-lg object-cover" src="/images/earnify/info.svg" alt="info"></img>
+            
+            <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Overview</h3>
+            <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Problem & Solution</h1>
+            <p className="mb-4 laptop:mb-4 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Problem</b> - The earnify™ app is a rewards program developed by bp to enhance customer engagement and loyalty. It allows users to earn points on fuel and convenience store purchases, which can be redeemed for discounts and special offers. We were tasked with creating a solution that drives foot traffic into the convenience store, leveraging earnify’s existing points and rewards system.</p>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Our Solution</b> - A redesigned earnify app that prioritizes personalization and targets incentivizing customer’s (aimed at a younger gen-z audience) to make in-store purchases.</p>
+
+            <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Secondary Research</h3>
+            <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Understanding The Domain</h1>
+            <p className="mb-4 laptop:mb-4 opacity-80 leading-7 font-normal text-base laptop:text-xl">Our secondary research combined netnography, trend-spotting, and competitive analysis that all members contributed to. As the lead researcher, I led the organization and analysis of these findings to identify key opportunities for our design.</p>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">Netnography gave us valuable insights into consumer behavior within convenience stores and how loyalty systems influence purchasing decisions. Through trend-spotting, we identified two key consumer movements including <b>hyper-personalization</b> and <b>growing health-consciousness</b>, revealing opportunities for tailored rewards and healthier in-store offerings. Our competitive analysis of similar loyalty applications helped us understand the industry landscape, identifying opportunities to differentiate our solution and establish best practices to incorporate in our redesign.</p>
+            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/earnify/secondary_research.svg" alt="stats"></img>
+
+            <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Primary Research</h3>
+            <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Understanding Our Users</h1>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">Our primary research included a class-wide survey followed by qualitative one-on-one interviews that each team member conducted with UTD students. As lead researcher, I conducted <b>pattern analysis</b> on the survey data to identify recurring themes and behavioral trends among responses. This initial analysis allowed us to come up with <b>targeted interview questions</b> for richer qualitative insights. </p>
+            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/earnify/quotes.svg" alt="quotes"></img>
+
+            <h2 className="mb-2 laptop:mb-6 text-2xl laptop:text-3xl font-bold">User Insights</h2>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">Our interview responses validated our survey findings, confirming <b>consistent patterns</b> across user behaviors. Because the interview responses emerged into similar patterns we already had, we gained confidence in our research direction and could determine user insights. We were able to understand <b>why</b> users avoid the store, <b>what</b> incentives matter most, and <b>how</b> they interact with rewards.</p>
+            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/earnify/user_insights.svg" alt="user insights"></img>
+
+            <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Problem Statement</h3>
+            <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Defining Our Problem</h1>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">After determining our insights, we shaped our problem statement emphasizing the user’s value, personalization and convinience.</p>
+            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/earnify/problem_statement.svg" alt="problem statement"></img>
+
+            <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Ideating Solutions</h3>
+            <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Solving Our Problem</h1>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">Based from our research, we identified seven strategic app features that directly address our problem statement and align with our user insights. Each feature was selected to <b>overcome specific barriers</b> and <b>enhance the in-store experience</b>.</p>
+            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/earnify/features.svg" alt="features"></img>
+
+            <h2 className="mb-2 laptop:mb-6 text-2xl laptop:text-3xl font-bold">User Flow</h2>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">Our lead developer then created a detailed user flow to visualize how customers would navigate through our redesigned earnify app and interact with our new features. This critical step helped us visualize a <b>coherent navigation framework</b> within the existing app structure.</p>
+            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/earnify/user_flow.svg" alt="user flow"></img>
+
+            <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Prototype Development</h3>
+            <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Designing Our Solution</h1>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">After understanding how our features would fit within our app, we worked on creating our brand identity that we built on top of earnify’s existing brand. After designing our low-fi wireframes, we established our design system by blending earnify's core brand elements with visual components that would resonate with our Gen-Z audience.</p>
+            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/earnify/branding.svg" alt="branding"></img>
+
+            <h2 className="mb-2 laptop:mb-6 text-2xl laptop:text-3xl font-bold">Feature Showcase</h2>
+            <img className="w-full h-auto mb-4 laptop:mb-4 rounded-lg object-cover" src="/images/earnify/feature_screens_1.svg" alt="feature 1"></img>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Benzie weekly challenge</b> - The Benzie section on the rewards page allows the user to view all the Benzie challenges for that week. Once completed, they can earn a new accessory to style Benzie.</p>
+            <img className="w-full h-auto mb-4 laptop:mb-4 rounded-lg object-cover" src="/images/earnify/feature_screens_2.svg" alt="feature 2"></img>
+            <p className="mb-4 laptop:mb-4 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Surprise pop up challenge</b> - The Benzie section on the rewards page allows the user to view all the Benzie challenges for that week. Once completed, they can earn a new accessory to style Benzie.</p>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Scan to pay wallet</b> - The barcode section on the wallet page allows the user to scan the barcode for purchases made with app funds & earn points. If the surprise pop up is redeemed, it will show up on the wallet like pictured above, if not, the wallet page will only feature the barcode.</p>
+            <img className="w-full h-auto mb-4 laptop:mb-4 rounded-lg object-cover" src="/images/earnify/feature_screens_3.svg" alt="feature 3"></img>
+            <p className="mb-4 laptop:mb-4 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Gas price lock</b> - Once a user locks the price on a specific location, it is indicated in red. This allows the user to “lock in” the current price of gas to be used on a future purchase (it will only be valid for a certain amount of time).</p>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Favorite locations</b> - By saving certain locations as favorite, the user can easily view it on the fuel page.</p>
+            <img className="w-full h-auto mb-4 laptop:mb-4 rounded-lg object-cover" src="/images/earnify/feature_screens_4.svg" alt="feature 4"></img>
+            <p className="mb-4 laptop:mb-4 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Order & pickup</b> - This page allows the user to order items from a specific store. They can choose any item from the order page or order your favorite combos that are saved into the app.</p>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Notifications</b> - Timely notifications remind the user of deals & rewards to redeem.</p>
+
+            <h2 className="mb-2 laptop:mb-14 text-2xl laptop:text-3xl"><i>Final prototype link coming soon!</i></h2>
+
+            <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">My Takeways</h3>
+            <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">What I Learned</h1>
+            <p className="mb-12 laptop:mb-20 opacity-80 leading-7 font-normal text-base laptop:text-xl">This project gave me the chance to go through the full UX process, from early research all the way to final designs, while working with a real brand like bp. I learned what it means to balance user needs with business goals and saw firsthand how research-backed design can make a real impact. Collaborating in a team helped me grow in how I communicate ideas and work across different perspectives. Most importantly, it showed me how thoughtful design decisions, rooted in real user insights, can lead to meaningful experiences and tangible outcomes.</p>
+            </div>
+          <Footer />
+        </div>
+    </>
+  );
+};
+
+export default Earnify;

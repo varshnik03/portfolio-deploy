@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
+    "@next/swc-darwin-arm64": "^15.3.2",
     "autoprefixer": "^10.4.7",
     "custom-cursor-react": "^1.0.5",
     "gray-matter": "^4.0.3",

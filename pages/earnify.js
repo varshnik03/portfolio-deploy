@@ -71,7 +71,7 @@ const Earnify = () => {
             <img className="w-full h-auto mb-4 laptop:mb-4 rounded-lg object-cover" src="/images/earnify/feature_screens_2.svg" alt="feature 2"></img>
             <img className="w-full h-auto mb-4 laptop:mb-14 rounded-lg object-cover" src="/images/earnify/feature_screens_3.svg" alt="feature 3"></img>
             
-            <h2 className="mb-2 laptop:mb-14 text-2xl laptop:text-3xl"><i>Final prototype link coming soon!</i></h2>
+            <a href="https://www.figma.com/proto/KQFISRjndlJkY62cpzYmCQ/Earnify?page-id=0%3A1&node-id=587-2734&p=f&viewport=269%2C-692%2C0.06&t=5yehfcIfEWGTDosY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=472%3A2572" target="_blank"><h2 className="mb-2 laptop:mb-14 text-2xl laptop:text-3xl"><u>Click here for the final prototype!</u></h2></a>
 
             <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">My Takeways</h3>
             <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">What I Learned</h1>

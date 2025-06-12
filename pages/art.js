@@ -14,7 +14,7 @@ const Art = () => {
         <div className={`container mx-auto mb-10`}>
             <Header isBlog={true}></Header>
             <div className="mt-12 laptop:mt-20 ml-4 mr-4 laptop:ml-28 laptop:mr-28">
-                <h1 className="mx-auto mob:p-2 text-bold text-3xl laptop:text-5xl w-full" >Check out some of my artwork!</h1>
+                <h1 className="mx-auto mob:p-2 text-bold text-3xl laptop:text-4xl w-full" >Check out some of my artwork!</h1>
                 <div class="grid grid-cols-2 mt-8 laptop:mt-10 md:grid-cols-3 gap-5 laptop:gap-20">
                     <div>
                         <img class="h-auto max-w-full rounded" src="/images/art/kerala.JPG" alt=""/>

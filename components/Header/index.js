@@ -78,6 +78,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {
                     <Button onClick={() => router.push("/art")}>Art</Button>
                   }
+                  {
+                    <Button onClick={() => router.push("/illustrations")}>Illustrations</Button>
+                  }
                   
                   {showResume && (
                     <Button
@@ -104,6 +107,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
                   {
                     <Button onClick={() => router.push("/art")}>Art</Button>
+                  }
+                  {
+                    <Button onClick={() => router.push("/illustrations")}>Illustrations</Button>
                   }
                   {showResume && (
                     <Button
@@ -148,6 +154,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             {
               <Button onClick={() => router.push("/art")}>Art</Button>
             }
+            {
+              <Button onClick={() => router.push("/illustrations")}>Illustrations</Button>
+            }
             {showResume && (
               <Button
                 onClick={() => router.push("/resume")}
@@ -179,6 +188,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             )}
             {
               <Button onClick={() => router.push("/art")}>Art</Button>
+            }
+            {
+              <Button onClick={() => router.push("/illustrations")}>Illustrations</Button>
             }
             {showResume && (
               <Button

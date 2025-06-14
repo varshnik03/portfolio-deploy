@@ -37,6 +37,7 @@ const Olympics = () => {
             <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Product Design</h3>
             <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Let The Games Begin</h1>
             <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">After creating the brand, logo, and several motifs I created a couple of mockups of various merchendise that would be seen in the Olympics.</p>
+            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/olympics/Pictograms.svg" alt="id cards"></img>
             <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/olympics/idCard.svg" alt="id cards"></img>
             <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/olympics/ticket.svg" alt="ticket"></img>
             <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/olympics/poster.svg" alt="poster"></img>

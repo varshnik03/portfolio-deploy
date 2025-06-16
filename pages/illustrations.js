@@ -25,6 +25,10 @@ const Illustrations = () => {
                         <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg">Click <a href="/earnify"><u>here</u></a> to view the entire project!</p>
                     </div>
                     <div>
+                        <img class="h-auto max-w-full rounded" src="/images/illustrations/Isometric.svg" alt=""/>
+                        <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg">Isometric designs</p>
+                    </div>
+                    <div>
                         <img class="h-auto max-w-full rounded" src="/images/illustrations/chennai.svg" alt=""/>
                         <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg"> Designs from my Olympics branding project. Click <a href="/olympics"><u>here</u></a> to view the entire project!</p>
                     </div>

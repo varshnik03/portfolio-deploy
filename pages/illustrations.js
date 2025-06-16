@@ -17,16 +17,16 @@ const Illustrations = () => {
                 <h1 className="mx-auto mob:p-2 text-bold text-3xl laptop:text-4xl w-full" >Check out some of my illustrations!</h1>
                 <div class="grid grid-cols-1 mt-8 laptop:mt-10 md:grid-cols-3 gap-5 laptop:gap-20" align="center">
                     <div>
-                        <img class="h-auto max-w-full rounded" src="/images/illustrations/Navi.svg" alt=""/>
-                        <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg">Navi app branding</p>
-                    </div>
-                    <div>
                         <img class="h-auto max-w-full rounded" src="/images/illustrations/splash_screens.svg" alt=""/>
                         <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg">Click <a href="/earnify"><u>here</u></a> to view the entire project!</p>
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded" src="/images/illustrations/Isometric.svg" alt=""/>
                         <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg">Isometric designs</p>
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded" src="/images/illustrations/Navi.svg" alt=""/>
+                        <p class="mt-2 text-xs laptop:mt-4 laptop:text-lg">Navi app branding</p>
                     </div>
                     <div>
                         <img class="h-auto max-w-full rounded" src="/images/illustrations/chennai.svg" alt=""/>

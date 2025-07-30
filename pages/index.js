@@ -74,13 +74,13 @@ export default function Home() {
               </h1>
               <h1
                 ref={textTwo}
-                className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+                className="text-2xl tablet:text-5xl laptop:text-5xl laptopl:text-5xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
               >
                 {data.headerTaglineTwo}
               </h1>
               <h1
                 ref={textThree}
-                className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+                className="text-2xl tablet:text-5xl laptop:text-5xl laptopl:text-5xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
               >
                 {data.headerTaglineThree}
               </h1>

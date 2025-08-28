@@ -68,7 +68,7 @@ export default function Home() {
             <div className="mt-5">
               <h1
                 ref={textOne}
-                className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+                className="text-2xl tablet:text-5xl laptop:text-5xl laptopl:text-5xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
               >
                 {data.headerTaglineOne}
               </h1>
@@ -95,7 +95,7 @@ export default function Home() {
             <Socials className="mt-2 laptop:mt-5" />
           </div>
           <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-            <h1 className="text-3xl text-bold">Work</h1>
+            {/* <h1 className="text-3xl text-bold">Work</h1> */}
 
             <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
               {data.projects.map((project) => (
@@ -143,26 +143,27 @@ export default function Home() {
             </div>
           */}
 
-          <h1 className="text-3xl mt-20">About</h1>
-          <div className="mt-2 laptop:mt-10 p-2 laptop:p-0 flex flex-col laptop:flex-row items-center laptop:items-start" ref={aboutRef}>
-          
-            {/* Image Section */}
-            <div className=" laptop:mt-0 laptop:ml-4 laptop:mr-4 w-full laptop:w-auto">
-              <img
-                src="/images/headshotNew.jpg"
-                alt="Varshni Karthikeyan"
-                className="w-48 h-48 laptop:w-64 laptop:h-64 rounded-lg shadow-lg object-cover"
-              />
-            </div>
-
-            {/* Text Section */}
-            <div className="mt-10 flex-1 tablet:m-10 text-l laptop:text-2xl laptop:mr-22 w-full laptop:w-3/5">
-              
-              {/*<p>{data.aboutpara}</p>*/}
-              <p>👋🏽 My name is Varshni Karthikeyan and I am a recent grad from the University of Texas at Dallas with a Bachelors in Software Engineering and a certificate in Applied Experience Design and Research. Growing up, I had a passion for art and wanted to find a way to merge my creative side with a technical field. That's when I discovered user experience design, which offers a combination of both plus so much more!</p>
-            </div>
+          {/* ABOUT SECTION AGAIN
+            <h1 className="text-3xl mt-20">About</h1>
+            <div className="mt-2 laptop:mt-10 p-2 laptop:p-0 flex flex-col laptop:flex-row items-center laptop:items-start" ref={aboutRef}>
             
-          </div>
+              {/* Image Section */} {/*
+              <div className=" laptop:mt-0 laptop:ml-4 laptop:mr-4 w-full laptop:w-auto">
+                <img
+                  src="/images/headshotNew.jpg"
+                  alt="Varshni Karthikeyan"
+                  className="w-48 h-48 laptop:w-64 laptop:h-64 rounded-lg shadow-lg object-cover"
+                />
+              </div>
+
+              {/* Text Section */} {/*
+              <div className="mt-10 flex-1 tablet:m-10 text-l laptop:text-2xl laptop:mr-22 w-full laptop:w-3/5">
+                
+                <p>👋🏽 My name is Varshni Karthikeyan and I am a recent grad from the University of Texas at Dallas with a Bachelors in Software Engineering and a certificate in Applied Experience Design and Research. Growing up, I had a passion for art and wanted to find a way to merge my creative side with a technical field. That's when I discovered user experience design, which offers a combination of both plus so much more!</p>
+              </div>
+              
+            </div>
+          */}
         </div>
         
 

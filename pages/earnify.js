@@ -29,7 +29,8 @@ const Earnify = () => {
             <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Overview</h3>
             <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Problem & Solution</h1>
             <p className="mb-4 laptop:mb-4 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Problem</b> - The earnify™ app is a rewards program developed by bp to enhance customer engagement and loyalty. It allows users to earn points on fuel and convenience store purchases, which can be redeemed for discounts and special offers. We were tasked with creating a solution that drives foot traffic into the convenience store, leveraging earnify’s existing points and rewards system.</p>
-            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Our Solution</b> - A redesigned earnify app that prioritizes personalization and targets incentivizing customer’s (aimed at a younger gen-z audience) to make in-store purchases.</p>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl"><b>Our Solution</b> - A redesigned earnify app that gives Gen-Z a <b>personalized</b> and <b>engaging</b> experience to feel rewarded while making everyday errands and in-store shopping fit their <b>lifestyle</b>.</p>
+            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/earnify/solution_screen.svg" alt="solution"></img>
 
             <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Secondary Research</h3>
             <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Understanding The Domain</h1>
@@ -71,11 +72,35 @@ const Earnify = () => {
             <img className="w-full h-auto mb-4 laptop:mb-4 rounded-lg object-cover" src="/images/earnify/feature_screens_2.svg" alt="feature 2"></img>
             <img className="w-full h-auto mb-4 laptop:mb-14 rounded-lg object-cover" src="/images/earnify/feature_screens_3.svg" alt="feature 3"></img>
             
-            <a href="https://www.figma.com/proto/KQFISRjndlJkY62cpzYmCQ/Earnify?page-id=0%3A1&node-id=587-2734&p=f&viewport=269%2C-692%2C0.06&t=5yehfcIfEWGTDosY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=472%3A2572" target="_blank"><h2 className="mb-2 laptop:mb-14 text-2xl laptop:text-3xl"><u>Click here for the final prototype!</u></h2></a>
+            {/* <a href="https://www.figma.com/proto/KQFISRjndlJkY62cpzYmCQ/Earnify?page-id=0%3A1&node-id=587-2734&p=f&viewport=269%2C-692%2C0.06&t=5yehfcIfEWGTDosY-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=472%3A2572" target="_blank"><h2 className="mb-2 laptop:mb-14 text-2xl laptop:text-3xl"><u>Click here for the final prototype!</u></h2></a> */}
+           
+            <h2 className="mb-2 laptop:mb-6 text-2xl laptop:text-3xl font-bold">Final Prototype</h2>
+            <div style={{
+              borderRadius: '8px',
+              overflow: 'hidden',
+              marginBottom: '2rem'
+            }}>
+              <iframe 
+                src="https://embed.figma.com/proto/KQFISRjndlJkY62cpzYmCQ/Earnify?page-id=0%3A1&node-id=587-2734&starting-point-node-id=472%3A2572&show-proto-sidebar=1&embed-host=share"
+                width="100%" 
+                height="600" // adjust as needed
+                allowFullScreen
+                className="figma-prototype"
+              />
+            </div>
 
-            <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">My Takeways</h3>
-            <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">What I Learned</h1>
-            <p className="mb-12 laptop:mb-20 opacity-80 leading-7 font-normal text-base laptop:text-xl">This project gave me the chance to go through the full UX process, from early research all the way to final designs, while working with a real brand like bp. I learned what it means to balance user needs with business goals and saw firsthand how research-backed design can make a real impact. Collaborating in a team helped me grow in how I communicate ideas and work across different perspectives. Most importantly, it showed me how thoughtful design decisions, rooted in real user insights, can lead to meaningful experiences and tangible outcomes.</p>
+            <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Future Testing & Validation</h3>
+            <h1 className="mb-2 laptop:mb-6 text-2xl laptop:text-4xl font-bold">Looking Forward</h1>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">While timeline constraints limited our ability to conduct user testing, I developed a testing strategy focusing on 3 factors to validate our key design decisions and measure success metrics.</p>
+            <img className="w-full h-auto mb-12 laptop:mb-20 rounded-lg object-cover" src="/images/earnify/testing_plan.svg" alt="testing"></img>
+
+            <h3 className="mt-8 mb-4 opacity-50 text-sm laptop:text-lg">Impact & Learnings</h3>
+            <h1 className="mb-4 laptop:mb-10 text-2xl laptop:text-4xl font-bold">Wrapping Up</h1>
+            <h2 className="mb-2 laptop:mb-6 text-2xl laptop:text-3xl font-bold">Stakeholder Presentation</h2>
+            <p className="mb-4 laptop:mb-14 opacity-80 leading-7 font-normal text-base laptop:text-xl">Our team presented this solution to <b>bp employees</b>, receiving validation that many of our proposed features aligned with items already in their development backlog - confirming our user research accurately identified real pain points and opportunities. The positive reception demonstrated that our user-centered approach produced feasible, business-aligned solutions that addressed both customer needs and company objectives.</p>
+            <h2 className="mb-2 laptop:mb-6 text-2xl laptop:text-3xl font-bold">My Takeaways</h2>
+            <p className="mb-12 laptop:mb-20 opacity-80 leading-7 font-normal text-base laptop:text-xl">This project gave me the chance to go through the full UX process, from early research all the way to final designs, while working with a real brand like bp. I learned what it means to <b>balance user needs with business goals</b> and saw firsthand how research-backed design can make a real impact. Collaborating in a team helped me grow in how I communicate ideas and work across different perspectives. Most importantly, it showed me how thoughtful design decisions, rooted in real user insights, can lead to meaningful experiences and tangible outcomes.</p>
+            
             </div>
           <Footer />
         </div>

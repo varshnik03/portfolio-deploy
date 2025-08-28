@@ -71,7 +71,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               {!isBlog ? (
                 <div className="grid grid-cols-1">
                   <Button onClick={handleWorkScroll}>Work</Button>
-                  <Button onClick={handleAboutScroll}>About</Button>
+                  {/* <Button onClick={handleAboutScroll}>About</Button> */}
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Work</Button>
                   )}
@@ -91,11 +91,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     </Button>
                   )}
 
-                  <Button
-                    onClick={() => window.open("mailto:varshnik@gmail.com")}
-                  >
-                    Contact 
-                  </Button>
+                  {
+                    <Button onClick={() => router.push("/about")}>About</Button>
+                  }
                 </div> 
               ) : (
                 <div className="grid grid-cols-1" > {/* MOBILE INSIDE WORK */}
@@ -120,11 +118,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     </Button>
                   )}
 
-                  <Button
-                    onClick={() => window.open("mailto:varshnik@gmail.com")}
-                  >
-                    Contact
-                  </Button>
+                  {
+                    <Button onClick={() => router.push("/about")}>About</Button>
+                  }
                 </div>
               )}
             </Popover.Panel>
@@ -147,7 +143,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         {!isBlog ? (
           <div className="flex">
             <Button onClick={handleWorkScroll}>Work</Button>
-            <Button onClick={handleAboutScroll}>About</Button>
+            {/* <Button onClick={handleAboutScroll}>About</Button> */}
             {showBlog && (
               <Button onClick={() => router.push("/blog")}>Work</Button>
             )}
@@ -166,9 +162,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:varshnik@gmail.com")}>
-              Contact
-            </Button>
+            {
+              <Button onClick={() => router.push("/about")}>About</Button>
+            }
             {mounted && theme && data.darkMode && (
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -201,9 +197,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:varshik@gmail.com")}>
-              Contact
-            </Button>
+            {
+              <Button onClick={() => router.push("/about")}>About</Button>
+            }
 
             {mounted && theme && data.darkMode && (
               <Button

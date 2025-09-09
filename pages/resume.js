@@ -47,7 +47,7 @@ const Resume = () => {
             >
               <div class="flex flex-col tablet:flex-row justify-between items-start tablet:items-center space-y-4 tablet:space-y-0 tablet:space-x-4">
                 <h1 className="text-3xl font-bold">Varshni Karthikeyan</h1>
-                <Button type={"primary"} onClick={() => window.open('https://drive.google.com/file/d/1vWC9WW6zdhs_Ox-k5MrUdVj_IrHJlck0/view?usp=sharing', '_blank')}>Click for PDF </Button>
+                <Button type={"primary"} onClick={() => window.open('https://drive.google.com/file/d/1KRmTpICbysZjseW9SmoxccCDX3VOUdHu/view?usp=sharing', '_blank')}>Click for PDF </Button>
               </div>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>
               <div className="mt-5">
